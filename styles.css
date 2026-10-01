@@ -281,7 +281,7 @@ height: 440px;
     width: 100%;
     height: 520px;
     min-height: 0;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center 20%;
 }
 
