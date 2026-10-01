@@ -1056,3 +1056,140 @@ footer p {
   }
 
 }
+
+
+/* =====================================================
+   AJUSTE FINAL DE PROPORCIONES DAFLE
+   ===================================================== */
+
+/* ENCABEZADO */
+.nav{
+  min-height: 82px;
+  padding: 10px 5.5%;
+}
+
+.logo-dafle{
+  width: auto !important;
+  height: 62px !important;
+  max-height: 62px !important;
+  object-fit: contain;
+}
+
+.menu{
+  gap: 28px;
+}
+
+.menu a{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* PORTADA PRINCIPAL */
+.hero,
+.hero-dafle{
+  min-height: 610px !important;
+  height: 610px !important;
+  display: grid !important;
+  grid-template-columns: 45% 55% !important;
+  overflow: hidden;
+}
+
+/* COLUMNA DE TEXTO */
+.hero-copy,
+.hero-texto,
+.hero-dafle .hero-texto{
+  min-height: 610px !important;
+  padding: 65px 10% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1,
+.hero-dafle h1{
+  font-size: clamp(46px, 4vw, 68px) !important;
+  line-height: 1.02 !important;
+  max-width: 560px;
+  margin-bottom: 24px;
+}
+
+.hero p,
+.hero-descripcion{
+  max-width: 520px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* IMAGEN DE SOFÍA */
+.hero-imagen,
+.hero-foto,
+.hero-dafle .hero-foto{
+  width: 100% !important;
+  height: 610px !important;
+  min-height: 610px !important;
+  overflow: hidden;
+}
+
+.hero-imagen img,
+.hero-foto img,
+.hero-dafle .hero-foto img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block;
+}
+
+/* TABLET */
+@media (max-width: 900px){
+
+  .nav{
+    min-height: 72px;
+  }
+
+  .logo-dafle{
+    height: 52px !important;
+  }
+
+  .hero,
+  .hero-dafle{
+    height: auto !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .hero-copy,
+  .hero-texto,
+  .hero-dafle .hero-texto{
+    min-height: auto !important;
+    padding: 60px 8% !important;
+  }
+
+  .hero-imagen,
+  .hero-foto,
+  .hero-dafle .hero-foto{
+    height: 480px !important;
+    min-height: 480px !important;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px){
+
+  .logo-dafle{
+    height: 46px !important;
+  }
+
+  .hero h1,
+  .hero-dafle h1{
+    font-size: 42px !important;
+  }
+
+  .hero-imagen,
+  .hero-foto,
+  .hero-dafle .hero-foto{
+    height: 390px !important;
+    min-height: 390px !important;
+  }
+}
